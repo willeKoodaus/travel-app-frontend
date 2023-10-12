@@ -143,7 +143,7 @@ const TripPage: React.FC = () => {
     const fetchAttractions = useCallback(async (destination: string) => {
         setIsFetchingAttractions(true);
         try {
-          const response = await fetch( process.env.GPT_URI || 'http://localhost:3003/gpt', {
+          const response = await fetch('https://wsk2-travel-app-backend.azurewebsites.net/gpt', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
