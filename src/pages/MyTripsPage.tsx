@@ -97,9 +97,9 @@ interface Trip {
       return (
         <div className="container">
             <h1 className="my-4">Here you can see your trips</h1>
-            <button className="btn btn-primary mb-4" onClick={handleAddTripClick}>Add Trip</button>
+            <button className="btn btn-primary mb-4" id="addtripbtn" onClick={handleAddTripClick}>Add Trip</button>
             {data.tripsByUser.map((trip:Trip) => (
-                <div className="card mb-4" key={trip.id} onClick={() => handleTripClick(trip.id)}>
+                <div className="card mb-4" id="cardhover" key={trip.id} onClick={() => handleTripClick(trip.id)}>
                     <div className="card-body">
                         <h2 className="card-title">{trip.destination}</h2>
                         <p className="card-text">Start Date: {formatDate(trip.startDate)}</p>

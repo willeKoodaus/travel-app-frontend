@@ -2,8 +2,18 @@
     margin: 10px;
 }
 
+#addtripbtn {
+    margin-top: 25px;
+}
+
 .card {
     padding: 20px;
+}
+
+#cardhover:hover {
+    background-color: #f0f0f0; /* Or any color of your choice */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,1);
 }
 
 .list li button {
