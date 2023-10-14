@@ -1,46 +1,50 @@
-# Getting Started with Create React App
+# TravelApp - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Idea behind the app
+TravelApp is a travel planning application where users can register, log in, and plan their trips with details like flights, accommodations, activities, and packing lists. It helps to keep all the trip details in one place, so you do not need to check everything from multiple different applications. Application consists of frontend, backend and authentication server.
 
-## Available Scripts
+## Who is it for?
+TravelApp is for anyone who likes to travel. It is especially good for travelers who prefer to plan their trip by themselves instead of trusting travel agencies. These kind of travelers often book flights, accommodation and activities all from separate websites.
 
-In the project directory, you can run:
+## Where to find the app?
+Application can be accessed online at:
+[https://white-ocean-068e14d03.3.azurestaticapps.net/](https://white-ocean-068e14d03.3.azurestaticapps.net/)
 
-### `npm start`
+## How to use the app?
+App is meant for individual use so you can test it by yourself. Currently there is no possibility to share trip details with others. Here's how to use the app:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. First you will arrive to the Login page. If you have not used the app before, click "Sign up" link below the login form.
+![image](https://github.com/willeKoodaus/travel-app-backend/assets/94905760/59dda697-4f5e-442b-a0dc-aa4d1dfe5445)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+2. Enter user name (it can include letters, numbers and special characters), your email address and password.
 
-### `npm test`
+3. If registration is succesful, you will see a notification tellign that and will be transferred back to the Login page. Here you can login with the email and password you just entered when creating an account.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Next you will come to "My trips" page. Click "Add trip" to add a trip and give destination and travel dates. Finally click "Create trip".
+  
+5. Now you should see the trip you just added on "My trips" page. By clicking anywhere in the trip container you can go to the page of the individual trip. You can also edit the destination or dates if you wish by clickin "Edit".
+![image](https://github.com/willeKoodaus/travel-app-backend/assets/94905760/11b6d3b2-1772-4bae-85ae-54ee217dc730)
 
-### `npm run build`
+6. Once you have clicked on individual trip, you will be directed to the page where you will see more details of that specific trip.
+![image](https://github.com/willeKoodaus/travel-app-backend/assets/94905760/7ea41f41-034a-4644-9abb-f3dd500ce612)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Features of individual trip page:
+   * Add, edit and remove fligh details (airline, fligth number, departure date, return date, departure airport and arrival airport)
+   * Add, edit and remove accommodation details (name, address, arrival date, departure date, booking confirmation number)
+   * Add and remove activities. You can add name, date, location and description for each activity.
+   * Add and remove items on/from packing list.
+   * AI Generated list of 5 suggested attractions in your trip destination. This list might take a while to load.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+7. Finally when you are finished editing trip details you can click "Back to my trips" at the bottom of the page.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+8. If you do not wish to add any more trips, you can log out from the "Log out" button at the bottom of the "My trips" page.
 
-### `npm run eject`
+## Technical Stack
+* GraphQL
+* MongoDB
+* Express.js
+* Node.js
+* TypeScript
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Dependencies
+Refer to the package.json file for a detailed list of dependencies.
