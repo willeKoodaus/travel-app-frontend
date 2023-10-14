@@ -15,7 +15,7 @@ const GET_TRIP = gql`
 
 // Define your GraphQL mutation to update the trip
 const UPDATE_TRIP = gql`
-  mutation UpdateTrip($tripId: ID!, $input: TripInput!) {
+  mutation UpdateTrip($tripId: ID!, $input: updateTripInput!) {
     updateTrip(id: $tripId, input: $input) {
       destination
       startDate
